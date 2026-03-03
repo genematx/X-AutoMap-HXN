@@ -230,7 +230,6 @@ def _detect_blobs_cellpose(img_norm, img_orig, min_thresh, min_area, **kwargs):
         )
 
         
-
         # res = model.eval(
         #     img_rgb,
         #     channels=[0,0],
@@ -238,7 +237,6 @@ def _detect_blobs_cellpose(img_norm, img_orig, min_thresh, min_area, **kwargs):
         #     flow_threshold=0.4,
         #     cellprob_threshold=0)
         
-        print(len(res))
         # Handle different return formats
         if len(res) == 4:
             masks, flows, styles, diams = res
